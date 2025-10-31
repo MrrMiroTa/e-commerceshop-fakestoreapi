@@ -6,6 +6,5 @@ export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
     include: ['bootstrap']
-  },
-  base: process.env.VITE_PATH || "/e-commerceshop-fakestoreapi",
+  }
 })
