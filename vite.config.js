@@ -7,4 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     include: ['bootstrap']
   }
+  base: process.env.VITE_PATH || "/e-commerceshop-fakestoreapi",
 })
