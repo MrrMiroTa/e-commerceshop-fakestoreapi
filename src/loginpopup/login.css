@@ -1,0 +1,113 @@
+.login-popup {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(102, 195, 99, 0.6); /* Semi-transparent overlay for better focus */
+    display: grid;
+    place-items: center; /* Center content using grid */
+    z-index: 1000; /* Ensure high stacking context */
+  }
+  
+  .login-popup-container {
+    width: min(90%, 400px); /* Ensures responsive width, max of 400px */
+    background-color: #ffffff; /* Use hex for cleaner code */
+    color: #333333; /* Darker text for contrast */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    font-size: 1rem;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .login-popup-title h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #444444;
+  }
+  
+  .login-popup-title img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .login-popup-inputs input {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .login-popup-inputs input:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight color */
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    color: white;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    color: #0056b3;
+  }
+  button:visited {
+    color: #b30015;
+  }
+  
+
+  
+  .login-popup-condition {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .login-popup-condition p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .login-popup-condition input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .login-popup p span {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
